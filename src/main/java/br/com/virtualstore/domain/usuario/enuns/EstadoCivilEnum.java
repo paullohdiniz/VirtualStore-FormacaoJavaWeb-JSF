@@ -5,7 +5,7 @@ package br.com.virtualstore.domain.usuario.enuns;
 
 /**
  * @author MARCIO
- *
+ *	Representar o estado civil do usuario
  */
 public enum EstadoCivilEnum {
 

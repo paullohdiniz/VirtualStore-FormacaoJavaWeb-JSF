@@ -5,7 +5,7 @@ package br.com.virtualstore.domain.usuario.enuns;
 
 /**
  * @author MARCIO
- *
+ *	Representar o sexo do usuario
  */
 public enum SexoEnum {
 

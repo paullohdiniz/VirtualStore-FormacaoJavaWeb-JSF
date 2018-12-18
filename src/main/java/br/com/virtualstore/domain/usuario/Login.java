@@ -7,12 +7,12 @@ import java.io.Serializable;
 
 /**
  * @author MARCIO
- *
+ *	Representar o login do usuario
  */
 public class Login implements Serializable {
 
 	/**
-	 * 
+	 * Atributo da implementatação do Serializable. Boa pratica de programação
 	 */
 	private static final long serialVersionUID = 3780987893724298431L;
 
@@ -31,8 +31,8 @@ public class Login implements Serializable {
 		return "Login [id=" + id + ", login=" + login + ", senha=" + senha + "]";
 	}
 
-	/* (non-Javadoc)
-	 * @see java.lang.Object#hashCode()
+	/**
+	 * Metodos hashCode e equals para o id. Boa pratica de programação
 	 */
 	@Override
 	public int hashCode() {
@@ -42,9 +42,6 @@ public class Login implements Serializable {
 		return result;
 	}
 
-	/* (non-Javadoc)
-	 * @see java.lang.Object#equals(java.lang.Object)
-	 */
 	@Override
 	public boolean equals(Object obj) {
 		if (this == obj)

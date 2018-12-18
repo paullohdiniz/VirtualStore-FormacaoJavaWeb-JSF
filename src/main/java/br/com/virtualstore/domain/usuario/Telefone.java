@@ -9,12 +9,12 @@ import br.com.virtualstore.domain.usuario.enuns.TipoTelefoneEnum;
 
 /**
  * @author MARCIO
- *
+ *	Representar os telefones poder ter
  */
 public class Telefone implements Serializable {
 
 	/**
-	 * 
+	 * Atributo da implementatação do Serializable. Boa pratica de programação
 	 */
 	private static final long serialVersionUID = -4261445733078075931L;
 
@@ -30,8 +30,8 @@ public class Telefone implements Serializable {
 		super();
 	}
 
-	/* (non-Javadoc)
-	 * @see java.lang.Object#toString()
+	/**
+	 * Metodos hashCode e equals para o id. Boa pratica de programação
 	 */
 	@Override
 	public String toString() {

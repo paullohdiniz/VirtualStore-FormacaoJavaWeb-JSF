@@ -14,12 +14,12 @@ import br.com.virtualstore.domain.usuario.Usuario;
 
 /**
  * @author MARCIO
- *
+ *	Representar o carinho de compras virtual do usuario
  */
 public class Venda implements Serializable {
 
 	/**
-	 * 
+	 * Atributo da implementatação do Serializable. Boa pratica de programação
 	 */
 	private static final long serialVersionUID = 443960697543334949L;
 	
@@ -59,6 +59,9 @@ public class Venda implements Serializable {
 				+ comprador + ", itensVenda=" + itensVenda + "]";
 	}
 
+	/**
+	 * Metodos hashCode e equals para o id. Boa pratica de programação
+	 */
 	@Override
 	public int hashCode() {
 		final int prime = 31;

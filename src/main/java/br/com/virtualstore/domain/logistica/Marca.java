@@ -8,12 +8,12 @@ import java.util.List;
 
 /**
  * @author MARCIO
- *
+ *	Representar as marcas que um produto poder ter
  */
 public class Marca implements Serializable {
 
 	/**
-	 * 
+	 * Atributo da implementatação do Serializable. Boa pratica de programação
 	 */
 	private static final long serialVersionUID = -5154420324048596821L;
 	
@@ -32,6 +32,9 @@ public class Marca implements Serializable {
 		return "Marca [id=" + id + ", nome=" + nome + ", listaProdutos=" + listaProdutos + "]";
 	}
 
+	/**
+	 * Metodos hashCode e equals para o id. Boa pratica de programação
+	 */
 	@Override
 	public int hashCode() {
 		final int prime = 31;

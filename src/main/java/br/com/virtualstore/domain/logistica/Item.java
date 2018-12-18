@@ -8,12 +8,12 @@ import java.math.BigDecimal;
 
 /**
  * @author MARCIO
- *
+ *	Representar os itens do carinho de compras vitual
  */
 public class Item implements Serializable {
 
 	/**
-	 * 
+	 * Atributo da implementatação do Serializable. Boa pratica de programação
 	 */
 	private static final long serialVersionUID = -2791125505602883826L;
 	
@@ -37,6 +37,9 @@ public class Item implements Serializable {
 				+ ", venda=" + venda + "]";
 	}
 
+	/**
+	 * Metodos hashCode e equals para o id. Boa pratica de programação
+	 */
 	@Override
 	public int hashCode() {
 		final int prime = 31;

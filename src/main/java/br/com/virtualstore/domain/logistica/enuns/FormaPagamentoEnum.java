@@ -5,7 +5,7 @@ package br.com.virtualstore.domain.logistica.enuns;
 
 /**
  * @author MARCIO
- *
+ *	Representar as formas de pagamento que o usuario pode escolher
  */
 public enum FormaPagamentoEnum {
 

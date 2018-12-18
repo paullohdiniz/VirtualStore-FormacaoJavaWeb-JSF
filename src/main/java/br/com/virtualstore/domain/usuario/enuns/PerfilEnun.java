@@ -5,7 +5,7 @@ package br.com.virtualstore.domain.usuario.enuns;
 
 /**
  * @author MARCIO
- *
+ *	Representar as permisões do usuario
  */
 public enum PerfilEnun {
 

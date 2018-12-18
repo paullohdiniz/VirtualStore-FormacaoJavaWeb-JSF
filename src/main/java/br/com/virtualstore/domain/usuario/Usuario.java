@@ -16,12 +16,12 @@ import br.com.virtualstore.domain.usuario.enuns.StatusUsuarioEnum;
 
 /**
  * @author MARCIO
- *
+ * Representar o usurio no sistema
  */
 public class Usuario implements Serializable {
 
 	/**
-	 * 
+	 * Atributo da implementatação do Serializable. Boa pratica de programação
 	 */
 	private static final long serialVersionUID = -712494062048019067L;
 
@@ -68,6 +68,9 @@ public class Usuario implements Serializable {
 				+ ", listaTelefones=" + listaTelefones + "]";
 	}
 
+	/**
+	 * Metodos hashCode e equals para o id. Boa pratica de programação
+	 */
 	@Override
 	public int hashCode() {
 		final int prime = 31;

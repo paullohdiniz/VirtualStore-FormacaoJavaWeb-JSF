@@ -12,12 +12,12 @@ import br.com.virtualstore.domain.logistica.enuns.StatusProdutoEnun;
 
 /**
  * @author MARCIO
- *
+ *	Representar o produto que o usuario pode comprar
  */
 public class Produto implements Serializable {
 
 	/**
-	 * 
+	 * Atributo da implementatação do Serializable. Boa pratica de programação
 	 */
 	private static final long serialVersionUID = 5533075836829063036L;
 	
@@ -57,6 +57,9 @@ public class Produto implements Serializable {
 				+ ", listaCategoria=" + listaCategoria + "]";
 	}
 
+	/**
+	 * Metodos hashCode e equals para o id. Boa pratica de programação
+	 */
 	@Override
 	public int hashCode() {
 		final int prime = 31;

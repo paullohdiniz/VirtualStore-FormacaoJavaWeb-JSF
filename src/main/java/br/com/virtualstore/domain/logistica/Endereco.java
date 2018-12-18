@@ -9,12 +9,12 @@ import br.com.virtualstore.domain.logistica.enuns.EstadoEnum;
 
 /**
  * @author MARCIO
- *
+ *	Representar os endereços que os usuarios podem ter
  */
 public class Endereco implements Serializable {
 
 	/**
-	 * 
+	 * Atributo da implementatação do Serializable. Boa pratica de programação
 	 */
 	private static final long serialVersionUID = -6856673352076818157L;
 
@@ -47,6 +47,9 @@ public class Endereco implements Serializable {
 				+ pontoReferencia + ", estado=" + estado + "]";
 	}
 
+	/**
+	 * Metodos hashCode e equals para o id. Boa pratica de programação
+	 */
 	@Override
 	public int hashCode() {
 		final int prime = 31;

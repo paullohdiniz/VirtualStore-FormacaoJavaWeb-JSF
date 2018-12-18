@@ -5,7 +5,7 @@ package br.com.virtualstore.domain.logistica.enuns;
 
 /**
  * @author MARCIO
- *
+ *	Representar o estado onde o usuario mora
  */
 public enum EstadoEnum {
 
