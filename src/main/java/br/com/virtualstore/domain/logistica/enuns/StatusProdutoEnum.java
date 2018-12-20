@@ -5,16 +5,16 @@ package br.com.virtualstore.domain.logistica.enuns;
 
 /**
  * @author MARCIO
- *	Representar o status do produto. Se ativo esta a venda, se inativo o usuario só postou mas não desidiu se vai vender ainda
+ *	Representar o status do livro. Se ativo esta a venda, se inativo o usuario só postou mas não desidiu se vai vender ainda
  */
-public enum StatusProdutoEnun {
+public enum StatusProdutoEnum {
 
 	ATIVO("Ativo"),
 	INATIVO("Inativo");
 	
 	private String status;
 
-	private StatusProdutoEnun(String status) {
+	private StatusProdutoEnum(String status) {
 		this.status = status;
 	}
 

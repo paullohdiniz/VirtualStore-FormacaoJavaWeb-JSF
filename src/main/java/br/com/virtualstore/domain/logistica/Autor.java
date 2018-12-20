@@ -8,28 +8,28 @@ import java.util.List;
 
 /**
  * @author MARCIO
- *	Representar as marcas que um produto poder ter
+ *	Representar o autor do livro
  */
-public class Marca implements Serializable {
+public class Autor implements Serializable {
 
 	/**
 	 * Atributo da implementatação do Serializable. Boa pratica de programação
 	 */
-	private static final long serialVersionUID = -5154420324048596821L;
-	
+	private static final long serialVersionUID = 2048760791178680125L;
+
 	private Long id;
 	
 	private String nome;
 	
-	private List<Produto> listaProdutos;
+	private List<Livro> listaLivros;
 
-	public Marca() {
+	public Autor() {
 		super();
 	}
 
 	@Override
 	public String toString() {
-		return "Marca [id=" + id + ", nome=" + nome + ", listaProdutos=" + listaProdutos + "]";
+		return "Autor [id=" + id + ", nome=" + nome + ", listaLivros=" + listaLivros + "]";
 	}
 
 	/**
@@ -42,16 +42,15 @@ public class Marca implements Serializable {
 		result = prime * result + ((id == null) ? 0 : id.hashCode());
 		return result;
 	}
-
 	@Override
 	public boolean equals(Object obj) {
 		if (this == obj)
 			return true;
 		if (obj == null)
 			return false;
-		if (!(obj instanceof Marca))
+		if (!(obj instanceof Autor))
 			return false;
-		Marca other = (Marca) obj;
+		Autor other = (Autor) obj;
 		if (id == null) {
 			if (other.id != null)
 				return false;
@@ -60,27 +59,45 @@ public class Marca implements Serializable {
 		return true;
 	}
 
+	/**
+	 * @return the id
+	 */
 	public Long getId() {
 		return id;
 	}
 
+	/**
+	 * @param id the id to set
+	 */
 	public void setId(Long id) {
 		this.id = id;
 	}
 
+	/**
+	 * @return the nome
+	 */
 	public String getNome() {
 		return nome;
 	}
 
+	/**
+	 * @param nome the nome to set
+	 */
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
 
-	public List<Produto> getListaProdutos() {
-		return listaProdutos;
+	/**
+	 * @return the listaLivros
+	 */
+	public List<Livro> getListaLivros() {
+		return listaLivros;
 	}
 
-	public void setListaProdutos(List<Produto> listaProdutos) {
-		this.listaProdutos = listaProdutos;
+	/**
+	 * @param listaLivros the listaLivros to set
+	 */
+	public void setListaLivros(List<Livro> listaLivros) {
+		this.listaLivros = listaLivros;
 	}
 }

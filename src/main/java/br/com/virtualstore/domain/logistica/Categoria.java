@@ -8,7 +8,7 @@ import java.util.List;
 
 /**
  * @author MARCIO
- *	Representar as categorias que um produto poder ter
+ *	Representar as categorias que o livro poder ter
  */
 public class Categoria implements Serializable {
 
@@ -21,7 +21,7 @@ public class Categoria implements Serializable {
 	
 	private String nome;
 
-	private List<Produto> listaProdutos;
+	private List<Livro> listaProdutos;
 
 	public Categoria() {
 		super();
@@ -76,11 +76,11 @@ public class Categoria implements Serializable {
 		this.nome = nome;
 	}
 
-	public List<Produto> getListaProdutos() {
+	public List<Livro> getListaProdutos() {
 		return listaProdutos;
 	}
 
-	public void setListaProdutos(List<Produto> listaProdutos) {
+	public void setListaProdutos(List<Livro> listaProdutos) {
 		this.listaProdutos = listaProdutos;
 	}
 }

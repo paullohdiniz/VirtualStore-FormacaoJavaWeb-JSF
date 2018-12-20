@@ -23,7 +23,7 @@ public class Item implements Serializable {
 	
 	private BigDecimal subTotal;
 	
-	private Produto produto;
+	private Livro produto;
 	
 	private Venda venda;
 
@@ -89,11 +89,11 @@ public class Item implements Serializable {
 		this.subTotal = subTotal;
 	}
 
-	public Produto getProduto() {
+	public Livro getProduto() {
 		return produto;
 	}
 
-	public void setProduto(Produto produto) {
+	public void setProduto(Livro produto) {
 		this.produto = produto;
 	}
 
