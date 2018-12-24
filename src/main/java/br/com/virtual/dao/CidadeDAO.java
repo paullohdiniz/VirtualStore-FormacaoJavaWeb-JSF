@@ -8,7 +8,7 @@ import br.com.virtual.model.Cidade;
  * email:fabiano.freitas@gmail.com
  * Fabiano Freitas
  *
- */
+ */ 
 
 public interface CidadeDAO extends DAO<Cidade, Integer>{
 

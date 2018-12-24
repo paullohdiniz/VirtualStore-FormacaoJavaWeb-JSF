@@ -9,6 +9,7 @@ import javax.persistence.EntityManager;
  * @author fabianos_
  * email:fabiano.freitas@gmail.com
  * Fabiano Freitas
+ * Teste DAO Configuracao
  *
  */
 
