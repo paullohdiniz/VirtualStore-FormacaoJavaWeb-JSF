@@ -1,5 +1,5 @@
 /**
- * 
+ * Commit Paulo
  */
 package br.com.virtualstore.domain.logistica;
 
