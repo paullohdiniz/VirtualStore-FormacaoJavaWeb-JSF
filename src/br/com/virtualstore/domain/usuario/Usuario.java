@@ -8,11 +8,19 @@ import java.util.Date;
 import java.util.List;
 
 import br.com.virtualstore.domain.logistica.Endereco;
+<<<<<<< HEAD:src/br/com/virtualstore/domain/usuario/Usuario.java
 import br.com.virtualstore.domain.logistica.Venda;
 import br.com.virtualstore.enumerations.usuario.EstadoCivilEnum;
 import br.com.virtualstore.enumerations.usuario.PerfilEnun;
 import br.com.virtualstore.enumerations.usuario.SexoEnum;
 import br.com.virtualstore.enumerations.usuario.StatusUsuarioEnum;
+=======
+import br.com.virtualstore.domain.logistica.Pedido;
+import br.com.virtualstore.domain.usuario.enuns.EstadoCivilEnum;
+import br.com.virtualstore.domain.usuario.enuns.PerfilEnun;
+import br.com.virtualstore.domain.usuario.enuns.SexoEnum;
+import br.com.virtualstore.domain.usuario.enuns.StatusUsuarioEnum;
+>>>>>>> af60454a2129503f7e8715b38671cf03f2fec1f6:src/main/java/br/com/virtualstore/domain/usuario/Usuario.java
 
 /**
  * @author MARCIO
@@ -51,7 +59,7 @@ public class Usuario implements Serializable {
 	
 	private Endereco endereco;
 
-	private List<Venda> listaVendasRelizadas;
+	private List<Pedido> listaVendasRelizadas;
 	
 	private List<Telefone> listaTelefones;
 
@@ -200,11 +208,11 @@ public class Usuario implements Serializable {
 		this.endereco = endereco;
 	}
 
-	public List<Venda> getListaVendasRelizadas() {
+	public List<Pedido> getListaVendasRelizadas() {
 		return listaVendasRelizadas;
 	}
 
-	public void setListaVendasRelizadas(List<Venda> listaVendasRelizadas) {
+	public void setListaVendasRelizadas(List<Pedido> listaVendasRelizadas) {
 		this.listaVendasRelizadas = listaVendasRelizadas;
 	}
 
