@@ -8,22 +8,14 @@ import java.util.Date;
 import java.util.List;
 
 import br.com.virtualstore.domain.logistica.Endereco;
-<<<<<<< HEAD:src/br/com/virtualstore/domain/usuario/Usuario.java
-import br.com.virtualstore.domain.logistica.Venda;
+import br.com.virtualstore.domain.logistica.Pedido;
 import br.com.virtualstore.enumerations.usuario.EstadoCivilEnum;
 import br.com.virtualstore.enumerations.usuario.PerfilEnun;
 import br.com.virtualstore.enumerations.usuario.SexoEnum;
 import br.com.virtualstore.enumerations.usuario.StatusUsuarioEnum;
-=======
-import br.com.virtualstore.domain.logistica.Pedido;
-import br.com.virtualstore.domain.usuario.enuns.EstadoCivilEnum;
-import br.com.virtualstore.domain.usuario.enuns.PerfilEnun;
-import br.com.virtualstore.domain.usuario.enuns.SexoEnum;
-import br.com.virtualstore.domain.usuario.enuns.StatusUsuarioEnum;
->>>>>>> af60454a2129503f7e8715b38671cf03f2fec1f6:src/main/java/br/com/virtualstore/domain/usuario/Usuario.java
 
 /**
- * @author MARCIO
+ * @author MARCIO 
  * Representar o usurio no sistema
  */
 public class Usuario implements Serializable {
@@ -34,33 +26,33 @@ public class Usuario implements Serializable {
 	private static final long serialVersionUID = -712494062048019067L;
 
 	private Long id;
-	 
+
 	private Date dataNascimento;
-	 
+
 	private String nome;
-	 
+
 	private String fotoUrl;
-	
+
 	private String naturalidade;
-	
+
 	private String email;
-	
+
 	private String cpf;
-	
+
 	private SexoEnum sexo;
-	
+
 	private EstadoCivilEnum estadoCivil;
-	
+
 	private PerfilEnun perfil;
-	
+
 	private StatusUsuarioEnum statusUsuario;
-	
+
 	private Login login;
-	
+
 	private Endereco endereco;
 
 	private List<Pedido> listaVendasRelizadas;
-	
+
 	private List<Telefone> listaTelefones;
 
 	public Usuario() {

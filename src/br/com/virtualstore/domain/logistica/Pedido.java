@@ -1,6 +1,4 @@
-/**
- * 
- */
+
 package br.com.virtualstore.domain.logistica;
 
 import java.io.Serializable;
@@ -8,13 +6,13 @@ import java.math.BigDecimal;
 import java.util.Calendar;
 import java.util.List;
 
-import br.com.virtualstore.domain.logistica.enuns.FormaPagamentoEnum;
-import br.com.virtualstore.domain.logistica.enuns.StatusVendaEnum;
 import br.com.virtualstore.domain.usuario.Usuario;
+import br.com.virtualstore.enumerations.logistica.FormaPagamentoEnum;
+import br.com.virtualstore.enumerations.logistica.StatusVendaEnum;
 
 /**
- * @author MARCIO
- *	Representar o carinho de compras virtual do usuario
+ * @author MARCIO 
+ * Representar o carinho de compras virtual do usuario
  */
 public class Pedido implements Serializable {
 
@@ -22,29 +20,29 @@ public class Pedido implements Serializable {
 	 * Atributo da implementatação do Serializable. Boa pratica de programação
 	 */
 	private static final long serialVersionUID = 443960697543334949L;
-	
+
 	private Long id;
-	
+
 	private Integer volumesTotal;
-	
+
 	private BigDecimal frete;
-	
+
 	private BigDecimal total;
-	
+
 	private BigDecimal subTotal;
-	
+
 	private BigDecimal desconto;
-	
+
 	private Calendar dataCompra;
-	
+
 	private StatusVendaEnum statusVenda;
-	
+
 	private FormaPagamentoEnum formaPagamento;
-	
+
 	private Usuario vendedor;
-	
+
 	private Usuario comprador;
-	
+
 	private List<Item> itensVenda;
 
 	public Pedido() {
