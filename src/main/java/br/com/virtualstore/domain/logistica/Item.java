@@ -25,7 +25,7 @@ public class Item implements Serializable {
 	
 	private Livro produto;
 	
-	private Venda venda;
+	private Pedido venda;
 
 	public Item() {
 		super();
@@ -97,11 +97,11 @@ public class Item implements Serializable {
 		this.produto = produto;
 	}
 
-	public Venda getVenda() {
+	public Pedido getVenda() {
 		return venda;
 	}
 
-	public void setVenda(Venda venda) {
+	public void setVenda(Pedido venda) {
 		this.venda = venda;
 	}
 }

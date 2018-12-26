@@ -16,7 +16,7 @@ import br.com.virtualstore.domain.usuario.Usuario;
  * @author MARCIO
  *	Representar o carinho de compras virtual do usuario
  */
-public class Venda implements Serializable {
+public class Pedido implements Serializable {
 
 	/**
 	 * Atributo da implementatação do Serializable. Boa pratica de programação
@@ -47,7 +47,7 @@ public class Venda implements Serializable {
 	
 	private List<Item> itensVenda;
 
-	public Venda() {
+	public Pedido() {
 		super();
 	}
 
@@ -76,9 +76,9 @@ public class Venda implements Serializable {
 			return true;
 		if (obj == null)
 			return false;
-		if (!(obj instanceof Venda))
+		if (!(obj instanceof Pedido))
 			return false;
-		Venda other = (Venda) obj;
+		Pedido other = (Pedido) obj;
 		if (id == null) {
 			if (other.id != null)
 				return false;
