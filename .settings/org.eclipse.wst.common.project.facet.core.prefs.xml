@@ -1,18 +1,12 @@
 <root>
-  <facet id="jst.jsf">
+  <facet id="jpt.jpa">
     <node name="libprov">
       <attribute name="provider-id" value="runtime-library-provider"/>
     </node>
   </facet>
-<<<<<<< HEAD
-  <facet id="jst.jaxrs">
+  <facet id="jst.jsf">
     <node name="libprov">
-      <attribute name="provider-id" value="jaxrs-no-op-library-provider"/>
-=======
-  <facet id="jpt.jpa">
-    <node name="libprov">
-      <attribute name="provider-id" value="jpa-no-op-library-provider"/>
->>>>>>> 110556fa0af2b5be5735cc4cf5a8659a96dd0611
+      <attribute name="provider-id" value="runtime-library-provider"/>
     </node>
   </facet>
 </root>
